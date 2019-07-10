@@ -5,9 +5,13 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 	</head>
 	<body>
+		<h1>Lowercaser Bookmarklet</h1>
+		<p>Drag and Drop the link to you bookmarks and click to turn all the text in a webpage to lower case</p>
 		<div class="row">
-			<div class="col-sm-2 col-md-push-4">
-				<a class="btn" href="javascript:(function(){var excluded = ['SCRIPT', 'STYLE', 'SVG', 'IMG'];Array.prototype.filter.call(document.querySelectorAll('body *'), el => !excluded.includes(el.nodeName)).flatMap(el => Array.prototype.filter.call(el.childNodes, node => node.nodeType == Node.TEXT_NODE)).forEach(txt => txt.nodeValue = txt.nodeValue != null ? txt.nodeValue.toLowerCase() : null);})();">Lowercaser</a>
+			<div class="col-xs-12">
+				<div class="center-block">
+					<a class="btn btn-default btn-lg" href="javascript:(function(){var excluded = ['SCRIPT', 'STYLE', 'SVG', 'IMG'];Array.prototype.filter.call(document.querySelectorAll('body *'), el => !excluded.includes(el.nodeName)).flatMap(el => Array.prototype.filter.call(el.childNodes, node => node.nodeType == Node.TEXT_NODE)).forEach(txt => txt.nodeValue = txt.nodeValue != null ? txt.nodeValue.toLowerCase() : null);})();">Lowercaser</a>
+				</div>
 			</div>
 		</div>
 	</body>
