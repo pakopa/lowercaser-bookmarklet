@@ -12,6 +12,7 @@
 			<div class="col-xs-12">
 				<div class="center-block">
 					<a class="btn btn-default btn-lg" href="javascript:(function(){var excluded = ['SCRIPT', 'STYLE', 'SVG', 'IMG'];Array.prototype.filter.call(document.querySelectorAll('body *'), el => !excluded.includes(el.nodeName)).flatMap(el => Array.prototype.filter.call(el.childNodes, node => node.nodeType == Node.TEXT_NODE)).forEach(txt => txt.nodeValue = txt.nodeValue != null ? txt.nodeValue.toLowerCase() : null);})();">Lowercaser</a>
+					<a class="btn btn-default btn-lg" href="javascript:(function(){Array.prototype.forEach.call(document.querySelectorAll('body *'), el => el.style.textTransform = "lowercase");})()">Lowercaser (CSS)</a>
 				</div>
 			</div>
 		</div>
