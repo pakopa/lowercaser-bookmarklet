@@ -1,0 +1,8 @@
+<html>
+	<head><title>lowercaser</title></head>
+	<body>
+		<div style="margin: 3em auto">
+			<a href="javascript:(function(){var excluded = ['SCRIPT', 'STYLE', 'SVG', 'IMG'];Array.prototype.filter.call(document.querySelectorAll('body *'), el => !excluded.includes(el.nodeName)).flatMap(el => Array.prototype.filter.call(el.childNodes, node => node.nodeType == Node.TEXT_NODE)).forEach(txt => txt.nodeValue = txt.nodeValue != null ? txt.nodeValue.toLowerCase() : null);})();">Lowercaser</a>
+		</div>		
+	</body>
+</html>
