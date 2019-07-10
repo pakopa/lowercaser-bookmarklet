@@ -1,8 +1,14 @@
+<!DOCTYPE html>
 <html>
-	<head><title>lowercaser</title></head>
+	<head>
+		<title>lowercaser</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	</head>
 	<body>
-		<div style="margin: 3em auto">
-			<a href="javascript:(function(){var excluded = ['SCRIPT', 'STYLE', 'SVG', 'IMG'];Array.prototype.filter.call(document.querySelectorAll('body *'), el => !excluded.includes(el.nodeName)).flatMap(el => Array.prototype.filter.call(el.childNodes, node => node.nodeType == Node.TEXT_NODE)).forEach(txt => txt.nodeValue = txt.nodeValue != null ? txt.nodeValue.toLowerCase() : null);})();">Lowercaser</a>
-		</div>		
+		<div class="row">
+			<div class="col-sm-2 col-md-push-4">
+				<a class="btn" href="javascript:(function(){var excluded = ['SCRIPT', 'STYLE', 'SVG', 'IMG'];Array.prototype.filter.call(document.querySelectorAll('body *'), el => !excluded.includes(el.nodeName)).flatMap(el => Array.prototype.filter.call(el.childNodes, node => node.nodeType == Node.TEXT_NODE)).forEach(txt => txt.nodeValue = txt.nodeValue != null ? txt.nodeValue.toLowerCase() : null);})();">Lowercaser</a>
+			</div>
+		</div>
 	</body>
 </html>
